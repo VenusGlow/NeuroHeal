@@ -1,0 +1,11 @@
+<nav className="flex flex-wrap overflow-x-auto gap-2 bg-indigo-800 text-white p-2">
+  {['Home','Journal','Sounds','Meditate','Chat','Profile'].map(label => (
+    <a
+      key={label}
+      href={`/app/${label.toLowerCase()}`}
+      className="flex-none px-4 py-2 rounded hover:bg-indigo-700 text-center"
+    >
+      {label}
+    </a>
+  ))}
+</nav>
